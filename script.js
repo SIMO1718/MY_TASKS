@@ -30,3 +30,9 @@ function addTask() {
     // 4. خوي الـ input باش تكتب مهمة خرى
     input.value = '';
 }
+// هاد الكود كيتسجل الـ Service Worker بلا ما تمس الـ HTML
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(() => console.log("تطبيقك واجد يخدم بلا أنترنيت!"))
+    .catch((err) => console.log("وقع مشكل في الـ SW: ", err));
+}
