@@ -1,0 +1,25 @@
+/* style.css */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+ul { list-style: none; padding: 0; }
+
+li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* هاد الكلاص غنزيدوه بـ JS فاش نكليكيو على المهمة */
+.checked {
+    text-decoration: line-through;
+    color: gray;
+    background: #d4edda;
+}
